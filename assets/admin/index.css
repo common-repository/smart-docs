@@ -1,0 +1,378 @@
+.container{
+  width:100%
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width:640px
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width:768px
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width:1024px
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width:1280px
+  }
+}
+
+.bg-white{
+  --bg-opacity:1 !important;
+  background-color:#fff !important;
+  background-color:rgba(255, 255, 255, var(--bg-opacity)) !important
+}
+
+.block{
+  display:block !important
+}
+
+.flex{
+  display:flex !important
+}
+
+.table{
+  display:table !important
+}
+
+.grid{
+  display:grid !important
+}
+
+.justify-items-center{
+  justify-items:center !important
+}
+
+.justify-center{
+  justify-content:center !important
+}
+
+.font-bold{
+  font-weight:700 !important
+}
+
+.h-fit-content{
+  height:fit-content !important
+}
+
+.text-sm{
+  font-size:0.875rem !important
+}
+
+.text-lg{
+  font-size:1.125rem !important
+}
+
+.m-5{
+  margin:1.25rem !important
+}
+
+.mx-auto{
+  margin-left:auto !important;
+  margin-right:auto !important
+}
+
+.mt-2{
+  margin-top:0.5rem !important
+}
+
+.mb-2{
+  margin-bottom:0.5rem !important
+}
+
+.mt-3{
+  margin-top:0.75rem !important
+}
+
+.mb-3{
+  margin-bottom:0.75rem !important
+}
+
+.mt-6{
+  margin-top:1.5rem !important
+}
+
+.mb-8{
+  margin-bottom:2rem !important
+}
+
+.px-4{
+  padding-left:1rem !important;
+  padding-right:1rem !important
+}
+
+.pb-3{
+  padding-bottom:0.75rem !important
+}
+
+.pt-4{
+  padding-top:1rem !important
+}
+
+.pl-5{
+  padding-left:1.25rem !important
+}
+
+.text-gray-500{
+  --text-opacity:1 !important;
+  color:#a0aec0 !important;
+  color:rgba(160, 174, 192, var(--text-opacity)) !important
+}
+
+.grid-cols-3{
+  grid-template-columns:repeat(3, minmax(0, 1fr)) !important
+}
+
+.col-span-1{
+  grid-column:span 1 / span 1 !important
+}
+
+.col-span-2{
+  grid-column:span 2 / span 2 !important
+}
+
+.grid-rows-2{
+  grid-template-rows:repeat(2, minmax(0, 1fr)) !important
+}
+
+.row-span-2{
+  grid-row:span 2 / span 2 !important
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg)
+  }
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0
+  }
+}
+
+@keyframes pulse{
+  50%{
+    opacity:.5
+  }
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    animation-timing-function:cubic-bezier(0.8,0,1,1)
+  }
+
+  50%{
+    transform:none;
+    animation-timing-function:cubic-bezier(0,0,0.2,1)
+  }
+}
+
+.components-editor-notices__dismissible{
+  position:sticky;
+  top:0;
+  right:0;
+  color:#1a1a1a
+}
+
+.components-editor-notices__pinned{
+  position:relative;
+  left:0;
+  top:0;
+  right:0;
+  color:#1a1a1a
+}
+
+.components-editor-notices__dismissible .components-notice,.components-editor-notices__pinned .components-notice{
+  box-sizing:border-box;
+  margin:0;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  padding:0 12px;
+  min-height:60px
+}
+
+.components-editor-notices__dismissible .components-notice .components-notice__dismiss,.components-editor-notices__pinned .components-notice .components-notice__dismiss{
+  margin-top:12px
+}
+
+.components-editor-notices__snackbar{
+  width:100%;
+  position:fixed;
+  bottom:10px;
+  right:10px
+}
+
+@media (min-width: 782px){
+  .components-editor-notices__snackbar{
+    width:fit-content;
+    width:-moz-fit-content
+  }
+}
+
+#wpcontent{
+  padding-left:0
+}
+
+.smartdocs-settings-header{
+  box-shadow:0px 0px 10px 0 rgba(0,0,0,0.1);
+  padding:10px;
+  align-items:center
+}
+
+.smartdocs-settings-header img{
+  border:none
+}
+
+.smartdocs-settings-header .smartdocs-version{
+  background:#eee;
+  padding:1px 5px;
+  color:#888
+}
+
+.smartdocs-settings-header .smartdocs-logo{
+  margin-right:10px
+}
+
+.smartdocs-settings-header .smartdocs-logo img{
+  width:200px
+}
+
+#smartdocs-setting-root{
+  --wp-admin-theme-color: #3B12FF;
+  --wp-admin-theme-color-darker-10: #2600de;
+  --wp-admin-theme-color-darker-20: #1e00ab
+}
+
+#smartdocs-setting-root a{
+  color:#3B12FF;
+  text-decoration:none
+}
+
+.smartdocs-settings-tabs{
+  box-shadow:0 2px 14px 0 rgba(0,0,0,0.05);
+  height:fit-content
+}
+
+.smartdocs-settings-tabs .components-tab-panel__tab-content{
+  padding:1rem
+}
+
+.smartdocs-settings-tabs .components-tab-panel__tabs-item{
+  font-weight:700
+}
+
+.smartdocs-settings-tabs .components-tab-panel__tabs-item.is-active{
+  box-shadow:inset 0 0 0 1.5px transparent,inset 0 -4px 0 0 #3B12FF
+}
+
+.smartdocs-settings-tabs .components-tab-panel__tabs-item:hover,.smartdocs-settings-tabs .components-tab-panel__tabs-item:focus{
+  color:#3B12FF
+}
+
+.smartdocs-settings-tabs>.components-tab-panel__tabs{
+  border-bottom:1px solid #e2e4e7
+}
+
+.smartdocs-settings-tabs .components-form-toggle.is-checked .components-form-toggle__track{
+  background-color:#3B12FF
+}
+
+.smartdocs-settings-tabs .components-button.is-primary{
+  background:#3B12FF
+}
+
+.smartdocs-settings-tabs .components-button.is-primary:hover:not(:disabled){
+  background:#2600de
+}
+
+.smartdocs-settings-tabs .post-types-list{
+  margin-top:20px
+}
+
+.smartdocs-settings-tabs .components-text-control__input{
+  font-size:14px
+}
+
+.smartdocs-settings-tabs .components-base-control__label{
+  font-size:0.875rem;
+  font-weight:600;
+  margin-bottom:0 !important
+}
+
+.smartdocs-settings-tabs .components-base-control__help{
+  font-size:0.75rem;
+  margin-top:0.25rem !important;
+  color:#757575
+}
+
+.smartdocs-settings-tabs .inline-number-control .components-base-control__field{
+  display:flex;
+  align-items:center
+}
+
+.smartdocs-settings-tabs .inline-number-control .components-base-control__label{
+  margin-bottom:0 !important
+}
+
+.smartdocs-settings-tabs .smartdocs-field--support-page{
+  margin-top:20px
+}
+
+.smartdocs-settings-tabs .smartdocs-field--customize{
+  border:1px solid #ddd;
+  padding:20px;
+  margin-top:30px !important
+}
+
+.smartdocs-settings-tabs .smartdocs-field--customize .components-base-control__field{
+  margin:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center
+}
+
+.smartdocs-settings-tabs p:last-of-type{
+  margin-bottom:0
+}
+
+.smartdocs-side-card{
+  border:none !important;
+  border-radius:0 !important;
+  box-shadow:0 2px 14px 0 rgba(0,0,0,0.05)
+}
+
+.smartdocs-settings-help{
+  padding:10px;
+  background:#f0f0f1;
+  margin-bottom:10px;
+  border-radius:5px
+}
+
+.smartdocs-settings-help p{
+  margin:0
+}
+
+@media (min-width: 640px){
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 1024px){
+}
+
+@media (min-width: 1280px){
+}
+
